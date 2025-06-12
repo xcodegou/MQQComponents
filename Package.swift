@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "MQQComponents",
     platforms: [
-        .iOS(.v11)
+        .iOS(.v9)
     ],
     products: [
         .library(
@@ -13,9 +13,30 @@ let package = Package(
     ],
     dependencies: [],
     targets: [
-        .binaryTarget(
+        .target(
             name: "MQQComponents",
-            path: "MQQComponents.xcframework"
+            path: "Sources/MQQComponents",
+            publicHeadersPath: "include",
+            cSettings: [
+                .headerSearchPath("."),
+                .headerSearchPath("MQQFoundation"),
+                .headerSearchPath("MQQNetworkInfo"),
+                .headerSearchPath("MQQSubstrate"),
+                .headerSearchPath("MQQUserDefaults"),
+                .headerSearchPath("MQQDatabase"),
+                .define("TARGET_OS_IOS", to: "1"),
+                .define("TARGET_OS_IPHONE", to: "1"),
+                .define("__IPHONE_OS_VERSION_MIN_REQUIRED", to: "90000"),
+                .unsafeFlags(["-fno-objc-arc"]),
+            ],
+            linkerSettings: [
+                .linkedFramework("CoreTelephony"),
+                .linkedFramework("SystemConfiguration"),
+                .linkedFramework("NetworkExtension"),
+                .linkedFramework("Foundation"),
+                .linkedFramework("UIKit"),
+                .linkedLibrary("sqlite3")
+            ]
         )
     ]
 ) 

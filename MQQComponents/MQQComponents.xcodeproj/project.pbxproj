@@ -1,0 +1,667 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2B46D56E2C16CA1100834912 /* MQQComponents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46D5652C16CA1100834912 /* MQQComponents.framework */; };
+		2B46D5732C16CA1100834912 /* MQQComponentsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5722C16CA1100834912 /* MQQComponentsTests.m */; };
+		2B46D6022C16CAED00834912 /* MQQDatabase.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5D52C16CAEC00834912 /* MQQDatabase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6032C16CAED00834912 /* MQQDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5D62C16CAEC00834912 /* MQQDatabase.m */; };
+		2B46D6042C16CAED00834912 /* MQQDatabase+Util.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5D72C16CAEC00834912 /* MQQDatabase+Util.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6052C16CAED00834912 /* MQQDatabase+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5D82C16CAEC00834912 /* MQQDatabase+Util.m */; };
+		2B46D6062C16CAED00834912 /* MQQDBResultSet.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5D92C16CAEC00834912 /* MQQDBResultSet.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6072C16CAED00834912 /* MQQDBResultSet.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5DA2C16CAEC00834912 /* MQQDBResultSet.m */; };
+		2B46D6082C16CAED00834912 /* MQQDBStatement.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5DB2C16CAEC00834912 /* MQQDBStatement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6092C16CAED00834912 /* MQQDBStatement.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5DC2C16CAEC00834912 /* MQQDBStatement.m */; };
+		2B46D60A2C16CAED00834912 /* MQQDBWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5DD2C16CAEC00834912 /* MQQDBWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D60B2C16CAED00834912 /* MQQDBWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5DE2C16CAEC00834912 /* MQQDBWrapper.m */; };
+		2B46D60C2C16CAED00834912 /* MQQDefines.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E02C16CAEC00834912 /* MQQDefines.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D60D2C16CAED00834912 /* MQQDispatch.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E12C16CAEC00834912 /* MQQDispatch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D60E2C16CAED00834912 /* MQQDispatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5E22C16CAEC00834912 /* MQQDispatch.m */; };
+		2B46D60F2C16CAED00834912 /* NSData+MQQHexString.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E32C16CAEC00834912 /* NSData+MQQHexString.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6102C16CAED00834912 /* NSData+MQQHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5E42C16CAEC00834912 /* NSData+MQQHexString.m */; };
+		2B46D6112C16CAED00834912 /* NSFileManager+Custom.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E52C16CAEC00834912 /* NSFileManager+Custom.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6122C16CAED00834912 /* NSFileManager+Custom.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5E62C16CAEC00834912 /* NSFileManager+Custom.m */; };
+		2B46D6132C16CAED00834912 /* NSObject+MQQValueExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E72C16CAEC00834912 /* NSObject+MQQValueExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6142C16CAED00834912 /* NSObject+MQQValueExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5E82C16CAEC00834912 /* NSObject+MQQValueExtended.m */; };
+		2B46D6152C16CAED00834912 /* NSString+HexInteger.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5E92C16CAEC00834912 /* NSString+HexInteger.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6162C16CAED00834912 /* NSString+HexInteger.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5EA2C16CAEC00834912 /* NSString+HexInteger.m */; };
+		2B46D6172C16CAED00834912 /* NSURL+MQQExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5EB2C16CAEC00834912 /* NSURL+MQQExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6182C16CAED00834912 /* NSURL+MQQExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5EC2C16CAEC00834912 /* NSURL+MQQExtended.m */; };
+		2B46D6192C16CAED00834912 /* NSURLComponents+MQQExtended.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5ED2C16CAEC00834912 /* NSURLComponents+MQQExtended.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D61A2C16CAED00834912 /* NSURLComponents+MQQExtended.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5EE2C16CAEC00834912 /* NSURLComponents+MQQExtended.m */; };
+		2B46D61B2C16CAED00834912 /* MQQNetworkInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5F02C16CAEC00834912 /* MQQNetworkInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D61C2C16CAED00834912 /* MQQNetworkInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5F12C16CAEC00834912 /* MQQNetworkInfo.m */; };
+		2B46D61F2C16CAED00834912 /* MQQNetworkInfo+Protected.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5F42C16CAEC00834912 /* MQQNetworkInfo+Protected.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6202C16CAED00834912 /* MQQNetworkInfo+Telephony.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5F52C16CAEC00834912 /* MQQNetworkInfo+Telephony.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6212C16CAED00834912 /* MQQNetworkInfo+Telephony.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5F62C16CAEC00834912 /* MQQNetworkInfo+Telephony.m */; };
+		2B46D6222C16CAED00834912 /* MQQNetworkInfo+WiFi.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5F72C16CAEC00834912 /* MQQNetworkInfo+WiFi.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6232C16CAED00834912 /* MQQNetworkInfo+WiFi.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5F82C16CAEC00834912 /* MQQNetworkInfo+WiFi.m */; };
+		2B46D6242C16CAED00834912 /* MQQSecureReachability.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5F92C16CAEC00834912 /* MQQSecureReachability.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6252C16CAED00834912 /* MQQSecureReachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D5FA2C16CAEC00834912 /* MQQSecureReachability.m */; };
+		2B46D6282C16CAED00834912 /* MQQUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D5FF2C16CAED00834912 /* MQQUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2B46D6292C16CAED00834912 /* MQQUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B46D6002C16CAED00834912 /* MQQUserDefaults.m */; };
+		2B46D62C2C16CB8700834912 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46D62B2C16CB8700834912 /* CoreTelephony.framework */; };
+		2B46D62E2C16CB9200834912 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46D62D2C16CB9200834912 /* SystemConfiguration.framework */; };
+		2B46D6302C16CB9C00834912 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46D62F2C16CB9C00834912 /* UIKit.framework */; };
+		2B46D6322C16CBB200834912 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B46D6312C16CBAA00834912 /* libsqlite3.0.tbd */; };
+		2B46D63A2C16D78E00834912 /* MQQComponents.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B46D6392C16D78E00834912 /* MQQComponents.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2B46D56F2C16CA1100834912 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2B46D55C2C16CA1100834912 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2B46D5642C16CA1100834912;
+			remoteInfo = MQQComponents;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		2B46D5652C16CA1100834912 /* MQQComponents.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MQQComponents.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B46D56D2C16CA1100834912 /* MQQComponentsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MQQComponentsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B46D5722C16CA1100834912 /* MQQComponentsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MQQComponentsTests.m; sourceTree = "<group>"; };
+		2B46D5D52C16CAEC00834912 /* MQQDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDatabase.h; sourceTree = "<group>"; };
+		2B46D5D62C16CAEC00834912 /* MQQDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQDatabase.m; sourceTree = "<group>"; };
+		2B46D5D72C16CAEC00834912 /* MQQDatabase+Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQQDatabase+Util.h"; sourceTree = "<group>"; };
+		2B46D5D82C16CAEC00834912 /* MQQDatabase+Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQQDatabase+Util.m"; sourceTree = "<group>"; };
+		2B46D5D92C16CAEC00834912 /* MQQDBResultSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDBResultSet.h; sourceTree = "<group>"; };
+		2B46D5DA2C16CAEC00834912 /* MQQDBResultSet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQDBResultSet.m; sourceTree = "<group>"; };
+		2B46D5DB2C16CAEC00834912 /* MQQDBStatement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDBStatement.h; sourceTree = "<group>"; };
+		2B46D5DC2C16CAEC00834912 /* MQQDBStatement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQDBStatement.m; sourceTree = "<group>"; };
+		2B46D5DD2C16CAEC00834912 /* MQQDBWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDBWrapper.h; sourceTree = "<group>"; };
+		2B46D5DE2C16CAEC00834912 /* MQQDBWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQDBWrapper.m; sourceTree = "<group>"; };
+		2B46D5E02C16CAEC00834912 /* MQQDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDefines.h; sourceTree = "<group>"; };
+		2B46D5E12C16CAEC00834912 /* MQQDispatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQDispatch.h; sourceTree = "<group>"; };
+		2B46D5E22C16CAEC00834912 /* MQQDispatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQDispatch.m; sourceTree = "<group>"; };
+		2B46D5E32C16CAEC00834912 /* NSData+MQQHexString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MQQHexString.h"; sourceTree = "<group>"; };
+		2B46D5E42C16CAEC00834912 /* NSData+MQQHexString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MQQHexString.m"; sourceTree = "<group>"; };
+		2B46D5E52C16CAEC00834912 /* NSFileManager+Custom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+Custom.h"; sourceTree = "<group>"; };
+		2B46D5E62C16CAEC00834912 /* NSFileManager+Custom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+Custom.m"; sourceTree = "<group>"; };
+		2B46D5E72C16CAEC00834912 /* NSObject+MQQValueExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MQQValueExtended.h"; sourceTree = "<group>"; };
+		2B46D5E82C16CAEC00834912 /* NSObject+MQQValueExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MQQValueExtended.m"; sourceTree = "<group>"; };
+		2B46D5E92C16CAEC00834912 /* NSString+HexInteger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+HexInteger.h"; sourceTree = "<group>"; };
+		2B46D5EA2C16CAEC00834912 /* NSString+HexInteger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HexInteger.m"; sourceTree = "<group>"; };
+		2B46D5EB2C16CAEC00834912 /* NSURL+MQQExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+MQQExtended.h"; sourceTree = "<group>"; };
+		2B46D5EC2C16CAEC00834912 /* NSURL+MQQExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+MQQExtended.m"; sourceTree = "<group>"; };
+		2B46D5ED2C16CAEC00834912 /* NSURLComponents+MQQExtended.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLComponents+MQQExtended.h"; sourceTree = "<group>"; };
+		2B46D5EE2C16CAEC00834912 /* NSURLComponents+MQQExtended.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLComponents+MQQExtended.m"; sourceTree = "<group>"; };
+		2B46D5F02C16CAEC00834912 /* MQQNetworkInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQNetworkInfo.h; sourceTree = "<group>"; };
+		2B46D5F12C16CAEC00834912 /* MQQNetworkInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQNetworkInfo.m; sourceTree = "<group>"; };
+		2B46D5F42C16CAEC00834912 /* MQQNetworkInfo+Protected.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQQNetworkInfo+Protected.h"; sourceTree = "<group>"; };
+		2B46D5F52C16CAEC00834912 /* MQQNetworkInfo+Telephony.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQQNetworkInfo+Telephony.h"; sourceTree = "<group>"; };
+		2B46D5F62C16CAEC00834912 /* MQQNetworkInfo+Telephony.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQQNetworkInfo+Telephony.m"; sourceTree = "<group>"; };
+		2B46D5F72C16CAEC00834912 /* MQQNetworkInfo+WiFi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MQQNetworkInfo+WiFi.h"; sourceTree = "<group>"; };
+		2B46D5F82C16CAEC00834912 /* MQQNetworkInfo+WiFi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MQQNetworkInfo+WiFi.m"; sourceTree = "<group>"; };
+		2B46D5F92C16CAEC00834912 /* MQQSecureReachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQSecureReachability.h; sourceTree = "<group>"; };
+		2B46D5FA2C16CAEC00834912 /* MQQSecureReachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQSecureReachability.m; sourceTree = "<group>"; };
+		2B46D5FF2C16CAED00834912 /* MQQUserDefaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQUserDefaults.h; sourceTree = "<group>"; };
+		2B46D6002C16CAED00834912 /* MQQUserDefaults.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MQQUserDefaults.m; sourceTree = "<group>"; };
+		2B46D62B2C16CB8700834912 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/CoreTelephony.framework; sourceTree = DEVELOPER_DIR; };
+		2B46D62D2C16CB9200834912 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/Library/Frameworks/SystemConfiguration.framework; sourceTree = DEVELOPER_DIR; };
+		2B46D62F2C16CB9C00834912 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/System/iOSSupport/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		2B46D6312C16CBAA00834912 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX14.5.sdk/usr/lib/libsqlite3.0.tbd; sourceTree = DEVELOPER_DIR; };
+		2B46D6392C16D78E00834912 /* MQQComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MQQComponents.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2B46D5622C16CA1100834912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B46D62E2C16CB9200834912 /* SystemConfiguration.framework in Frameworks */,
+				2B46D6302C16CB9C00834912 /* UIKit.framework in Frameworks */,
+				2B46D6322C16CBB200834912 /* libsqlite3.0.tbd in Frameworks */,
+				2B46D62C2C16CB8700834912 /* CoreTelephony.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B46D56A2C16CA1100834912 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B46D56E2C16CA1100834912 /* MQQComponents.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2B46D55B2C16CA1100834912 = {
+			isa = PBXGroup;
+			children = (
+				2B46D5672C16CA1100834912 /* MQQComponents */,
+				2B46D5712C16CA1100834912 /* MQQComponentsTests */,
+				2B46D5662C16CA1100834912 /* Products */,
+				2B46D62A2C16CB8700834912 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2B46D5662C16CA1100834912 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5652C16CA1100834912 /* MQQComponents.framework */,
+				2B46D56D2C16CA1100834912 /* MQQComponentsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2B46D5672C16CA1100834912 /* MQQComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D6392C16D78E00834912 /* MQQComponents.h */,
+				2B46D5DF2C16CAEC00834912 /* MQQDatabase */,
+				2B46D5E02C16CAEC00834912 /* MQQDefines.h */,
+				2B46D5EF2C16CAEC00834912 /* MQQFoundation */,
+				2B46D5FB2C16CAEC00834912 /* MQQNetworkInfo */,
+				2B46D6012C16CAED00834912 /* MQQUserDefaults */,
+			);
+			path = MQQComponents;
+			sourceTree = "<group>";
+		};
+		2B46D5712C16CA1100834912 /* MQQComponentsTests */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5722C16CA1100834912 /* MQQComponentsTests.m */,
+			);
+			path = MQQComponentsTests;
+			sourceTree = "<group>";
+		};
+		2B46D5DF2C16CAEC00834912 /* MQQDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5D52C16CAEC00834912 /* MQQDatabase.h */,
+				2B46D5D62C16CAEC00834912 /* MQQDatabase.m */,
+				2B46D5D72C16CAEC00834912 /* MQQDatabase+Util.h */,
+				2B46D5D82C16CAEC00834912 /* MQQDatabase+Util.m */,
+				2B46D5D92C16CAEC00834912 /* MQQDBResultSet.h */,
+				2B46D5DA2C16CAEC00834912 /* MQQDBResultSet.m */,
+				2B46D5DB2C16CAEC00834912 /* MQQDBStatement.h */,
+				2B46D5DC2C16CAEC00834912 /* MQQDBStatement.m */,
+				2B46D5DD2C16CAEC00834912 /* MQQDBWrapper.h */,
+				2B46D5DE2C16CAEC00834912 /* MQQDBWrapper.m */,
+			);
+			path = MQQDatabase;
+			sourceTree = "<group>";
+		};
+		2B46D5EF2C16CAEC00834912 /* MQQFoundation */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5E12C16CAEC00834912 /* MQQDispatch.h */,
+				2B46D5E22C16CAEC00834912 /* MQQDispatch.m */,
+				2B46D5E32C16CAEC00834912 /* NSData+MQQHexString.h */,
+				2B46D5E42C16CAEC00834912 /* NSData+MQQHexString.m */,
+				2B46D5E52C16CAEC00834912 /* NSFileManager+Custom.h */,
+				2B46D5E62C16CAEC00834912 /* NSFileManager+Custom.m */,
+				2B46D5E72C16CAEC00834912 /* NSObject+MQQValueExtended.h */,
+				2B46D5E82C16CAEC00834912 /* NSObject+MQQValueExtended.m */,
+				2B46D5E92C16CAEC00834912 /* NSString+HexInteger.h */,
+				2B46D5EA2C16CAEC00834912 /* NSString+HexInteger.m */,
+				2B46D5EB2C16CAEC00834912 /* NSURL+MQQExtended.h */,
+				2B46D5EC2C16CAEC00834912 /* NSURL+MQQExtended.m */,
+				2B46D5ED2C16CAEC00834912 /* NSURLComponents+MQQExtended.h */,
+				2B46D5EE2C16CAEC00834912 /* NSURLComponents+MQQExtended.m */,
+			);
+			path = MQQFoundation;
+			sourceTree = "<group>";
+		};
+		2B46D5FB2C16CAEC00834912 /* MQQNetworkInfo */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5F02C16CAEC00834912 /* MQQNetworkInfo.h */,
+				2B46D5F12C16CAEC00834912 /* MQQNetworkInfo.m */,
+				2B46D5F42C16CAEC00834912 /* MQQNetworkInfo+Protected.h */,
+				2B46D5F52C16CAEC00834912 /* MQQNetworkInfo+Telephony.h */,
+				2B46D5F62C16CAEC00834912 /* MQQNetworkInfo+Telephony.m */,
+				2B46D5F72C16CAEC00834912 /* MQQNetworkInfo+WiFi.h */,
+				2B46D5F82C16CAEC00834912 /* MQQNetworkInfo+WiFi.m */,
+				2B46D5F92C16CAEC00834912 /* MQQSecureReachability.h */,
+				2B46D5FA2C16CAEC00834912 /* MQQSecureReachability.m */,
+			);
+			path = MQQNetworkInfo;
+			sourceTree = "<group>";
+		};
+		2B46D6012C16CAED00834912 /* MQQUserDefaults */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D5FF2C16CAED00834912 /* MQQUserDefaults.h */,
+				2B46D6002C16CAED00834912 /* MQQUserDefaults.m */,
+			);
+			path = MQQUserDefaults;
+			sourceTree = "<group>";
+		};
+		2B46D62A2C16CB8700834912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2B46D6312C16CBAA00834912 /* libsqlite3.0.tbd */,
+				2B46D62F2C16CB9C00834912 /* UIKit.framework */,
+				2B46D62D2C16CB9200834912 /* SystemConfiguration.framework */,
+				2B46D62B2C16CB8700834912 /* CoreTelephony.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2B46D5602C16CA1100834912 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B46D63A2C16D78E00834912 /* MQQComponents.h in Headers */,
+				2B46D6242C16CAED00834912 /* MQQSecureReachability.h in Headers */,
+				2B46D6172C16CAED00834912 /* NSURL+MQQExtended.h in Headers */,
+				2B46D60C2C16CAED00834912 /* MQQDefines.h in Headers */,
+				2B46D6152C16CAED00834912 /* NSString+HexInteger.h in Headers */,
+				2B46D6132C16CAED00834912 /* NSObject+MQQValueExtended.h in Headers */,
+				2B46D6202C16CAED00834912 /* MQQNetworkInfo+Telephony.h in Headers */,
+				2B46D6042C16CAED00834912 /* MQQDatabase+Util.h in Headers */,
+				2B46D60D2C16CAED00834912 /* MQQDispatch.h in Headers */,
+				2B46D60A2C16CAED00834912 /* MQQDBWrapper.h in Headers */,
+				2B46D6082C16CAED00834912 /* MQQDBStatement.h in Headers */,
+				2B46D6112C16CAED00834912 /* NSFileManager+Custom.h in Headers */,
+				2B46D61B2C16CAED00834912 /* MQQNetworkInfo.h in Headers */,
+				2B46D6192C16CAED00834912 /* NSURLComponents+MQQExtended.h in Headers */,
+				2B46D6222C16CAED00834912 /* MQQNetworkInfo+WiFi.h in Headers */,
+				2B46D6062C16CAED00834912 /* MQQDBResultSet.h in Headers */,
+				2B46D6022C16CAED00834912 /* MQQDatabase.h in Headers */,
+				2B46D61F2C16CAED00834912 /* MQQNetworkInfo+Protected.h in Headers */,
+				2B46D6282C16CAED00834912 /* MQQUserDefaults.h in Headers */,
+				2B46D60F2C16CAED00834912 /* NSData+MQQHexString.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2B46D5642C16CA1100834912 /* MQQComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B46D5772C16CA1100834912 /* Build configuration list for PBXNativeTarget "MQQComponents" */;
+			buildPhases = (
+				2B46D5602C16CA1100834912 /* Headers */,
+				2B46D5612C16CA1100834912 /* Sources */,
+				2B46D5622C16CA1100834912 /* Frameworks */,
+				2B46D5632C16CA1100834912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MQQComponents;
+			productName = MQQComponents;
+			productReference = 2B46D5652C16CA1100834912 /* MQQComponents.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		2B46D56C2C16CA1100834912 /* MQQComponentsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2B46D57A2C16CA1100834912 /* Build configuration list for PBXNativeTarget "MQQComponentsTests" */;
+			buildPhases = (
+				2B46D5692C16CA1100834912 /* Sources */,
+				2B46D56A2C16CA1100834912 /* Frameworks */,
+				2B46D56B2C16CA1100834912 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2B46D5702C16CA1100834912 /* PBXTargetDependency */,
+			);
+			name = MQQComponentsTests;
+			productName = MQQComponentsTests;
+			productReference = 2B46D56D2C16CA1100834912 /* MQQComponentsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2B46D55C2C16CA1100834912 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					2B46D5642C16CA1100834912 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+					2B46D56C2C16CA1100834912 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 2B46D55F2C16CA1100834912 /* Build configuration list for PBXProject "MQQComponents" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2B46D55B2C16CA1100834912;
+			productRefGroup = 2B46D5662C16CA1100834912 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2B46D5642C16CA1100834912 /* MQQComponents */,
+				2B46D56C2C16CA1100834912 /* MQQComponentsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2B46D5632C16CA1100834912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B46D56B2C16CA1100834912 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2B46D5612C16CA1100834912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B46D6182C16CAED00834912 /* NSURL+MQQExtended.m in Sources */,
+				2B46D6052C16CAED00834912 /* MQQDatabase+Util.m in Sources */,
+				2B46D6212C16CAED00834912 /* MQQNetworkInfo+Telephony.m in Sources */,
+				2B46D6092C16CAED00834912 /* MQQDBStatement.m in Sources */,
+				2B46D61C2C16CAED00834912 /* MQQNetworkInfo.m in Sources */,
+				2B46D6032C16CAED00834912 /* MQQDatabase.m in Sources */,
+				2B46D6142C16CAED00834912 /* NSObject+MQQValueExtended.m in Sources */,
+				2B46D6162C16CAED00834912 /* NSString+HexInteger.m in Sources */,
+				2B46D6122C16CAED00834912 /* NSFileManager+Custom.m in Sources */,
+				2B46D6252C16CAED00834912 /* MQQSecureReachability.m in Sources */,
+				2B46D6102C16CAED00834912 /* NSData+MQQHexString.m in Sources */,
+				2B46D60E2C16CAED00834912 /* MQQDispatch.m in Sources */,
+				2B46D61A2C16CAED00834912 /* NSURLComponents+MQQExtended.m in Sources */,
+				2B46D60B2C16CAED00834912 /* MQQDBWrapper.m in Sources */,
+				2B46D6292C16CAED00834912 /* MQQUserDefaults.m in Sources */,
+				2B46D6072C16CAED00834912 /* MQQDBResultSet.m in Sources */,
+				2B46D6232C16CAED00834912 /* MQQNetworkInfo+WiFi.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2B46D5692C16CA1100834912 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B46D5732C16CA1100834912 /* MQQComponentsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2B46D5702C16CA1100834912 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2B46D5642C16CA1100834912 /* MQQComponents */;
+			targetProxy = 2B46D56F2C16CA1100834912 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2B46D5752C16CA1100834912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		2B46D5762C16CA1100834912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = NO;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		2B46D5782C16CA1100834912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 2.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tcmpp.MQQComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B46D5792C16CA1100834912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 20;
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				MARKETING_VERSION = 2.0.0;
+				MODULE_VERIFIER_SUPPORTED_LANGUAGES = "objective-c objective-c++";
+				MODULE_VERIFIER_SUPPORTED_LANGUAGE_STANDARDS = "gnu17 gnu++20";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tcmpp.MQQComponents;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		2B46D57B2C16CA1100834912 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tcmpp.MQQComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2B46D57C2C16CA1100834912 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tencent.tcmpp.MQQComponentsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2B46D55F2C16CA1100834912 /* Build configuration list for PBXProject "MQQComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B46D5752C16CA1100834912 /* Debug */,
+				2B46D5762C16CA1100834912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B46D5772C16CA1100834912 /* Build configuration list for PBXNativeTarget "MQQComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B46D5782C16CA1100834912 /* Debug */,
+				2B46D5792C16CA1100834912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2B46D57A2C16CA1100834912 /* Build configuration list for PBXNativeTarget "MQQComponentsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2B46D57B2C16CA1100834912 /* Debug */,
+				2B46D57C2C16CA1100834912 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2B46D55C2C16CA1100834912 /* Project object */;
+}
